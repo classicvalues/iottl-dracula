@@ -31,11 +31,11 @@ if __name__ =="__main__":
 
     # create MQTT client, if username and password is ommited hardcoded pair is used
     client = iottl.Hermes(
-        "SERVER, 
+        'SERVER', 
         username='USERNAME',
         password='PASSWORD',
         port=8883, 
-        cacert="ca.crt", 
+        cacert='ca.crt', 
         callback = message)
 
     # optional address with no encryption
